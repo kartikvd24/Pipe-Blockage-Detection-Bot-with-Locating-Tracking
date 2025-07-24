@@ -41,14 +41,14 @@ Thins project integrates the hardware with the ML model in which we have used Su
 
 ## 🗂 Project Structure
 Pipe-Blockage-Detection-Bot-with-Locating-Tracking/
-|- bot_image.jpg
-|- real_time_trial.mp4
-|- main.py
-|- yolov8_model/ # Trained model files
-|- runs/ # Contains helper functions
-|- requirements.txt # Python dependencies
-|- README.md
-|- Datasets
+|- bot_image.jpg |
+|- real_time_trial.mp4 |
+|- main.py |
+|- yolov8_model/ | 
+|- runs/ |
+|- requirements.txt | 
+|- README.md |
+|- Datasets |
 ---
 
 ## 🚀 How to Run the Project
