@@ -62,7 +62,7 @@ This project is a real-time pipe blockage detection system using an ESP32-CAM mo
    -  Install Python dependencies:
 
      ```bash
-     pip install -r requirements.txt
+     pip install -r req.txt
      ```
      
    - Open `main.py` and replace the placeholder URL with the ESP32-CAM stream:
