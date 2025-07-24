@@ -56,7 +56,7 @@ This project is a real-time pipe blockage detection system using an ESP32-CAM mo
    ```cmd
    yolo detect train data=your_dataset.yaml model=yolov8n.pt epochs=50 imgsz=640
    ```
-   **NOTE**-the .yaml can be creted by our own based on the parameters you are trying to add on the model.
+  > 🛑 **NOTE** - the .yaml can be creted by our own based on the parameters you are trying to add on the model. 
    
 3. **Run Detection Script on Local PC**
    - 
