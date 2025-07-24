@@ -50,14 +50,15 @@ This project is a real-time pipe blockage detection system using an ESP32-CAM mo
 2. **Get ESP32-CAM Stream URL**
    - After uploading the code, open the **Serial Monitor**.
    - Copy the IP address shown (e.g., `http://192.168.1.104`).
-
+     
+3. **Training yolov8 model**
+   -open cmd as admin as use the following command-
+   ```cmd
+   yolo detect train data=your_dataset.yaml model=yolov8n.pt epochs=50 imgsz=640
+   ```
+   
 3. **Run Detection Script on Local PC**
-   - Install Python dependencies:
-
-     ```bash
-     pip install -r requirements.txt
-     ```
-
+   - 
    - Open `main.py` and replace the placeholder URL with the ESP32-CAM stream:
 
      ```python
