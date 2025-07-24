@@ -59,7 +59,12 @@ This project is a real-time pipe blockage detection system using an ESP32-CAM mo
   > 🛑 **NOTE** - the .yaml can be creted by our own based on the parameters you are trying to add on the model. 
    
 3. **Run Detection Script on Local PC**
-   - 
+   -  Install Python dependencies:
+
+     ```bash
+     pip install -r requirements.txt
+     ```
+     
    - Open `main.py` and replace the placeholder URL with the ESP32-CAM stream:
 
      ```python
