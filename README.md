@@ -17,6 +17,7 @@ Thins project integrates the hardware with the ML model in which we have used Su
 | Component             | Description                                      |
 |-----------------------|--------------------------------------------------|
 | ESP32-CAM             | For capturing real-time video stream             |
+| ESP32                 | For location tracking and control of bot         |
 | L298N Motor Driver    | For controlling the movement of the bot          |
 | 2x DC Motors          | Bot locomotion                                   |
 | Chassis               | Bot structural frame                             |
@@ -24,9 +25,11 @@ Thins project integrates the hardware with the ML model in which we have used Su
 | Jumper Wires          | For all interconnections                         |
 | Arduino IDE           | To flash the ESP32-CAM                           |
 | USB to TTL Converter  | To program the ESP32-CAM                         |
-| GPS Module (Optional) | For location tracking (if included)              |
+| GPS Module(Neo-6sm)   | For location tracking (if included)              |
+
 
 ---
+
 
 ## 🧠 AI Model Used
 
@@ -42,10 +45,10 @@ Pipe-Blockage-Detection-Bot-with-Locating-Tracking/
 ├── real_time_trial.mp4
 ├── main.py
 ├── yolov8_model/ # Trained model files
-├── utils/ # Contains helper functions
+├── runs/ # Contains helper functions
 ├── requirements.txt # Python dependencies
 ├── README.md
-
+├── Datasets
 ---
 
 ## 🚀 How to Run the Project
@@ -54,6 +57,7 @@ Pipe-Blockage-Detection-Bot-with-Locating-Tracking/
    - Use Arduino IDE.
    - Select `AI Thinker ESP32-CAM` as the board.
    - Upload your ESP sketch (you can use a basic MJPEG stream sketch or a custom sketch that sends video stream over Wi-Fi).
+   - also upload the arduino sketch for the location tracking in the ESP32 with the control via the blynk app through the smart phone.  
 
 2. **Get ESP32-CAM Stream URL**
    - After uploading the code, open the **Serial Monitor**.
@@ -88,7 +92,7 @@ Pipe-Blockage-Detection-Bot-with-Locating-Tracking/
 4. **Output**
    - The script will open the video stream and apply YOLOv8 detection on the frames in real-time.
    - Detected blockages will be highlighted.
-
+   - The model Efficiceny and the Model training weights can be seen the folder called 'runs' the wreight can be used for dectection and also it contains the parameters that         are been inherited
 ---
 
 ## 🛠 Requirements
@@ -105,6 +109,8 @@ Pipe-Blockage-Detection-Bot-with-Locating-Tracking/
 
 - Make sure both your ESP32-CAM and your computer are connected to the same Wi-Fi network.
 - This system can be extended by integrating a GPS module and uploading location data to a web server or Firebase.
+- The Model took approx.10hrs for traning 50 epochs as per my gpu specifications
+- Gpu used for the traning - Nvidia GTX 1650 
 
 ---
 
