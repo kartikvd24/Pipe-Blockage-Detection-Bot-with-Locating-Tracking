@@ -110,7 +110,7 @@ Pipe-Blockage-Detection-Bot-with-Locating-Tracking/
 - Make sure both your ESP32-CAM and your computer are connected to the same Wi-Fi network.
 - This system can be extended by integrating a GPS module and uploading location data to a web server or Firebase.
 - The Model took approx.10hrs for traning 50 epochs as per my gpu specifications
-- Gpu used for the traning - Nvidia GTX 1650 
+- Gpu used for the training - Nvidia GTX 1650 
 
 ---
 
