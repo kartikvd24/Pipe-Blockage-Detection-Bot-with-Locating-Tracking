@@ -1,6 +1,7 @@
 # Pipe Blockage Detection Bot with Locating & Tracking
 
 This project is a real-time pipe blockage detection system using an ESP32-CAM module and YOLOv8 model with OpenCV. The bot can navigate inside pipelines, detect blockages using a trained object detection model, and send the live stream over Wi-Fi. The stream is processed on a local machine for real-time detection.
+Thins project integrates the hardware with the ML model in which we have used Supervised learning as the datasets for yolov8 were used.its not a conventional Edge AI project but can be categorized as such due to the implementation.
 
 ## 📸 Project Media
 
@@ -36,7 +37,14 @@ This project is a real-time pipe blockage detection system using an ESP32-CAM mo
 ---
 
 ## 🗂 Project Structure
-
+Pipe-Blockage-Detection-Bot-with-Locating-Tracking/
+├── bot_image.jpg
+├── real_time_trial.mp4
+├── main.py
+├── yolov8_model/ # Trained model files
+├── utils/ # Contains helper functions
+├── requirements.txt # Python dependencies
+├── README.md
 
 ---
 
