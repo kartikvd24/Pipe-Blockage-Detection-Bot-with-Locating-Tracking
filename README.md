@@ -119,8 +119,9 @@ Pipe-Blockage-Detection-Bot-with-Locating-Tracking/
 - **Kartik Desai**
 - **Preetam B Sansuddi**
 - **Jeevan D**
-- **MD RIYAN** 
-  Undergraduate Students, DSCE  
+- **MD RIYAN**
+  
+  Undergraduate Students, ECE Dept, DSCE  
   Project on Smart Pipeline Monitoring with Edge AI
 
 ---
